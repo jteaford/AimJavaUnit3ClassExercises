@@ -12,16 +12,17 @@ public class GetAverage {
      * @param args
      */
     public static void main(String[] args) {
-        // Set how many integers
+        // Set how many integers - how many numbers the user has to enter
         int numberOfIntegers = 5;
 
+        // User input area
         Scanner input = new Scanner(System.in);
         System.out.println("Enter " + numberOfIntegers + " integer values.\r");
 
         // Declare an array
         int[] array = new int[numberOfIntegers];
-        for(int i = 0; i < numberOfIntegers; i++) {
-        array[i] = input.nextInt();
+        for(int i = 0; i < numberOfIntegers; i++) { // For loop, starting at array value 0, while i is less than 5, keep adding 1
+        array[i] = input.nextInt(); // The input goes into array
         }
         input.close();
 
